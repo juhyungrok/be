@@ -1,7 +1,5 @@
 package com.kiosk.be.Product.controller.entity;
 
-import java.util.List;
-
 import com.kiosk.be.Order.controller.entity.Order;
 
 import jakarta.persistence.Entity;
@@ -10,7 +8,6 @@ import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
 import jakarta.persistence.JoinColumn;
 import jakarta.persistence.ManyToOne;
-import jakarta.persistence.OneToMany;
 import jakarta.persistence.Table;
 
 @Entity
@@ -77,6 +74,14 @@ public class Product {
 
     public void setQuantity(int quantity) {
         this.quantity = quantity;
+    }
+
+    public Order getOrder() {
+        return order;
+    }
+
+    public void setOrder(Order order) {
+        this.order = order;
     }
 
 }

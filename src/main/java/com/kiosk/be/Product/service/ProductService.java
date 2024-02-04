@@ -8,4 +8,6 @@ public interface ProductService {
 
     List<Product> getAllProducts();
 
+    void saveOrder(Long productId, int quantity);
+
 }
