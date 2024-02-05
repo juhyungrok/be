@@ -1,11 +1,8 @@
-package com.kiosk.be.Product.repository;
-
-import java.util.List;
+package com.kiosk.be.product.repository;
 
 import org.springframework.data.jpa.repository.JpaRepository;
 
-import com.kiosk.be.Product.controller.entity.Product;
-import com.kiosk.be.Product.domain.ProductDto;
+import com.kiosk.be.product.entity.Product;
 
 public interface ProductRepository extends JpaRepository<Product, Long> {
 
